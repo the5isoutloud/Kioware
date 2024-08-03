@@ -1,7 +1,7 @@
 function runBatchFile() {
     try {
         var shell = new ActiveXObject("WScript.Shell");
-        shell.Run("C:\\Path\\To\\BatchFile\\start_zoom.bat", 1, false);
+        shell.Run("C:\Users\\User\\Desktop\\Kioware\\launchZoom.bat", 1, false);
     } catch (e) {
         alert("Error: " + e.message);
     }
