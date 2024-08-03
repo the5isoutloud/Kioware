@@ -14,10 +14,10 @@ git clone https://github.com/the5isoutloud/Kioware.git
 
 REM Step 3: Copy a file from a UNC path and run the executable
 echo Copying file from UNC path...
-copy \\172.16.150.50\Share\Kioware\install\KioWareClientSetup.exe C:\Share\KioWareClientSetup.exe
+xcopy /E /I /Y \\172.16.150.50\Share\Kioware\install\KioWareClientSetup.exe .
 
 echo Running the executable...
-start C:\Share\yourfile.exe
+start C:\Share\KioWareClientSetup.exe
 
 echo Done.
 pause
