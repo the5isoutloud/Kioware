@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoom Launcher</title>
+  <script>
+    function launchZoom() {
+      fetch('/open-zoom', { method: 'GET' })
+        .then(() => window.close())
+        .catch(() => window.close());
+    }
+  </script>
+</head>
+<body onload="launchZoom()">
+  <p>Launching Support...</p>
+</body>
+</html>
